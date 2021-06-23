@@ -5,5 +5,5 @@ const port = process.env.PORT || 8000;
 const server = http.createServer(app);
 
 server.listen(port, () => {
-    console.log("Server restarted successfully")
+    console.log(`Server restarted successfully on http://localhost:${port}/`)
 });
