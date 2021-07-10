@@ -27,9 +27,9 @@
             <label style="margin-right: 90px;">Create a game:</label>
             <div class="create-game-container">
                 <form>
-                    <div class="label-pair"><label>Time per round:</label> <input id="time_per_round" type="number"/></div>
-                    <div class="label-pair"><label>Categories per round:</label> <input id="categories_per_round" type="number"/></div>
-                    <div class="label-pair"><label>Number of rounds:</label> <input id="number_of_rounds" type="number"/></div>
+                    <div class="label-pair"><label>Time per round in minutes:</label> <input onKeyDown="return false" min="1" max="5" id="time_per_round" type="number"/></div>
+                    <div class="label-pair"><label>Categories per round:</label> <input min="2" max="10" id="categories_per_round" type="number"/></div>
+                    <div class="label-pair"><label>Number of rounds:</label> <input min="1" max="26" id="number_of_rounds" type="number"/></div>
                     <div class="label-pair"><label>Invite link:</label> <input autocomplete="off" id="url_hash" type="text" placeholder="generated url"/></div>
                     <script>
                         window.onload = function() {
