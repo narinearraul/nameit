@@ -1,3 +1,64 @@
 .table {
     background-color: rgb(133, 128, 128);
 }
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 800px;
+}
+
+form {
+    color: #2E3192;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input {
+    margin-left: 20px;
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    font-family: monospace;
+    padding: 5px;
+    color: #2E3192;
+    font-weight: 700;
+}
+
+.create-game-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    place-items: center;
+    border-style: double;
+    border-color: purple;
+    padding: 20px;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-style: dashed;
+    border-color: #2E3192;
+    margin-left: 20px;
+}
+
+.label-pair {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+button {
+    width: 135px;
+    height: 35px;
+    background-color: #2E3192;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+}

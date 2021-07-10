@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="helper.js"></script>
+        <link rel="stylesheet" href="styles/main.css">
         <title>Name It! - Categories</title>
     </head>
     <body>
-        FUN
+        <div class="label-pair">
+            <label>Select player picture:</label> 
+            <!-- Avatar selectable images here -->
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+        </div>
+        <div class="label-pair">
+            <label style="margin-right: 35px;">Enter player name:</label> 
+            <input style="width: 690px;" type="text"/>
+        </div>
+        <div class="label-pair">
+            <label style="margin-right: 90px;">Create a game:</label>
+            <div class="create-game-container">
+                <form>
+                    <div class="label-pair"><label>Time per round:</label> <input id="time_per_round" type="number"/></div>
+                    <div class="label-pair"><label>Categories per round:</label> <input id="categories_per_round" type="number"/></div>
+                    <div class="label-pair"><label>Number of rounds:</label> <input id="number_of_rounds" type="number"/></div>
+                    <div class="label-pair"><label>Invite link:</label> <input autocomplete="off" id="url_hash" type="text" placeholder="generated url"/></div>
+                    <script>
+                        window.onload = function() {
+                            generateRoomHash()
+                        }                
+                    </script>
+                </form>
+                <button onclick="notReady()">Start game</button>
+            </div>
+        </div>
     </body>
 </html>
